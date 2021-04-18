@@ -1,103 +1,21 @@
-.topmiddle {
-  height: 180px;
-  width: 180px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;  
- 
-}
-
-.center {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.letter {
-  display: inline-flex;
-  align-items: center;
-  font-family: "Bungee Hairline";
-  justify-content: center;
-  font-weight: 50;
-  width: 20px;
-  font-size: 20px;
-  
-}
-
-hr {
-  margin: auto;
-  width: 45%;
-}
-
-
 .zoom {
-  padding: 15px;
-  transition: transform .3s; /* Animation */
-  border-radius: 50%;
+  transition: transform .4s; /* Animation */
+  margin: 25px;
+  color: white;
+  font-size:2.5em;;
 }
+
+
 
 .zoom:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
-.font {
-  color: white;
-  font-family: "Bungee Hairline";
-  font-size: 15px;
-}
-
-
-.greyscale{
-  transition: all 2s;
-  -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-}
-.greyscale{
-  border-radius: 30%;
-  float: left;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-}
-.greyscale:hover {
-  border-radius: 50%;
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* VIDEO */
 .wrapper {
   --font-size: 100px;
   --color: white;
@@ -105,7 +23,7 @@ hr {
   --clip-path: circle(20px at left);
   --clip-path-hover: circle(25px at left);
   --clip-path-clicked: circle(150vw at left);
-  --duration: .4s;
+  --duration: .6s;
   --timing-function: ease;
   position: relative;
   display: -webkit-box;
@@ -120,7 +38,7 @@ hr {
   width: 100%;
 }
 .wrapper .video {
-  height: 100vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,8 +63,8 @@ hr {
   top: 50%;
   left: 50%;
 
-  min-width: 1280px;
-  min-height: 620px;
+  min-width: 1000px;
+  min-height: 300px;
   width: 0;
   height: 0;
 
@@ -215,8 +133,8 @@ hr {
 }
 
 .wrapper input {
-  width: 500px;
-  height: 100px;
+  width: 250px;
+  height: 50px;
   margin: auto;
   position: absolute;
   left: 0;
@@ -334,7 +252,7 @@ body .socials > a:hover {
 
 
 button {
-  font-family: 'Bungee Hairline', monospace;
+  font-family: 'Bungee Hairline';
   letter-spacing: 1px;
   background: none;
   color: white;
@@ -343,7 +261,7 @@ button {
   border: none;
   height: 50px;
   width: 190px;
-  font-size: 14px;
+  font-size: 20px;
   z-index: 2;
   -webkit-transition: .01s .23s ease-out all;
   transition: .01s .23s ease-out all;
@@ -356,19 +274,19 @@ button:before {
   left: 0;
   top: 0;
   height: 100%;
-  width: 55%;
-  background: #202020;
+  width: 100%;
+  background: none;
   z-index: -1;
   -webkit-transition: .3s ease-in all;
   transition: .3s ease-in all;
 }
 
 button:after {
-  content: '';
+  content: "";
   position: absolute;
   left: -5%;
   top: 5%;
-  height: 90%;
+  height: 10%;
   width: 5%;
   background: white;
   z-index: -1;
@@ -401,7 +319,7 @@ button:hover .icon-right.after:after {
 button:hover .icon-right.after:before {
   left: -104px;
   top: 14px;
-  opacity: 0.2;
+  opacity: 1;
   color: white;
 }
 
@@ -417,7 +335,7 @@ button:hover .icon-right.after:before {
   font-size: 25px;
   display: inline-block;
   position: relative;
-  top: 25px;
+  top: 15px;
   -webkit-transform: translate3D(0, -50%, 0);
           transform: translate3D(0, -50%, 0);
 }
@@ -428,55 +346,6 @@ button:hover .icon-right.after:before {
   -webkit-transition: .15s .25s ease left, .10s .05s ease color;
   transition: .15s .25s ease left, .5s .05s ease color;
 }
-
-.signature {
-  position: fixed;
-  font-family: sans-serif;
-  font-weight: 100;
-  bottom: 10px;
-  left: 0;
-  letter-spacing: 4px;
-  font-size: 10px;
-  width: 100vw;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-/*# sourceMappingURL=a.css.map */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -510,7 +379,7 @@ body {
   margin-right: auto;
   margin-top: 50px;  
   border-radius: 50%;
-  background-image:url(https://i.imgur.com/hnzMXsm.png);
+  background-image:url(https://i.imgur.com/jiSave9.png);
   background-size: cover;
   -webkit-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
@@ -613,9 +482,63 @@ body {
 
 
 
+body{
+margin:0;
+overflow-x:hidden;
+}
 
+.footer{
+background:#000;
+opacity: 0.8;
+padding:30px 0px;
+font-family: 'Bungee Hairline';
+text-align:center;
+}
 
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color: white;
+font-size:0.8em;
+}
 
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
 
+.footer .row a:hover{
+color:#fff;
+}
 
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
 
