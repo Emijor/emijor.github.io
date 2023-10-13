@@ -1248,7 +1248,15 @@
 
 .waves-image-team-1 {
   width: 100%;
-  border-radius: 8px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-text-fill-color: inherit;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 0 0;
+  background-size: auto;
+  background-clip: border-box;
+  border-radius: 5px;
+  transition: opacity .2s;
 }
 
 .waves-tile-team-1 {
