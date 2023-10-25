@@ -88,6 +88,7 @@
   -webkit-text-fill-color: inherit;
   object-fit: fill;
   background-clip: border-box;
+  padding-bottom: 15px;
   position: fixed;
 }
 
@@ -106,6 +107,7 @@
 
 .navbar-brand {
   flex-direction: column;
+  padding-right: 0;
   display: flex;
 }
 
@@ -2512,7 +2514,7 @@
   }
 
   .background-video-4 {
-    height: 500px;
+    height: 400px;
   }
 
   .container-8, .container-10 {
