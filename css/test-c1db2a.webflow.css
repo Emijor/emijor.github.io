@@ -388,7 +388,7 @@
   overflow-wrap: normal;
   margin-top: 100px;
   padding-top: 199px;
-  padding-bottom: 0;
+  padding-bottom: 20px;
   font-family: "Exo 2 Variablefont Wght", sans-serif;
   font-size: 60px;
   font-style: normal;
@@ -420,6 +420,8 @@
 .container-7 {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .footer-dark {
@@ -544,7 +546,7 @@
 
 .features-list {
   border: 0 solid #f5f7fa;
-  padding: 80px 30px;
+  padding: 80px 30px 100px;
   position: relative;
 }
 
@@ -2509,6 +2511,10 @@
     flex-direction: column;
   }
 
+  .background-video-4 {
+    height: 500px;
+  }
+
   .container-8, .container-10 {
     max-width: none;
   }
@@ -2624,6 +2630,9 @@
   }
 
   .waves-tile-team-1 {
+    width: 250px;
+    height: 500px;
+    grid-row-gap: 24px;
     aspect-ratio: auto;
     padding: 16px;
   }
@@ -2631,6 +2640,7 @@
   .waves-grid-team-1 {
     grid-row-gap: 32px;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
   }
 
   .waves---heading-2-no-margins-3 {
