@@ -15,11 +15,13 @@
   --systemflow-lite-neutral--30: #edf0f3;
   --systemflow-lite-neutral--100: #0e0f11;
   --waves-library-dark-elevation: #ede0d8;
+  --flowui-component-library-gray-900: #160042;
   --spark-library-white: white;
   --systemflow-lite-neutral--5: rgba(255, 255, 255, .5);
   --spark-library-light-steel-purple: #a695fb;
   --spark-library-foreground-interactive-hover: #1e116e;
   --waves-library-background: #faebe3;
+  --systemflow-lite-neutral--80: #636b75;
 }
 
 .w-layout-blockcontainer {
@@ -100,7 +102,7 @@
 }
 
 .navbar-wrapper {
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   display: flex;
 }
@@ -1414,6 +1416,8 @@
   height: 100%;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
+  aspect-ratio: auto;
+  text-align: left;
   flex-direction: row;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
@@ -1426,7 +1430,7 @@
 }
 
 .waves-navbar-1 {
-  z-index: 105;
+  z-index: auto;
   height: 80px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom: 1px solid rgba(19, 19, 19, .2);
@@ -1938,6 +1942,135 @@
   border-radius: 24px;
 }
 
+.waves---heading-3-no-margins-5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.waves-icon-35 {
+  width: 32px;
+  height: 32px;
+}
+
+.waves---mg-bottom-19 {
+  margin-bottom: 16px;
+}
+
+.waves-tile-feature-5 {
+  grid-row-gap: 16px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+}
+
+.waves---grid-features-5 {
+  grid-column-gap: 24px;
+  grid-row-gap: 40px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 80px;
+}
+
+.waves---paragraph-big-6 {
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.waves---limit-510 {
+  max-width: 510px;
+}
+
+.waves---heading-2-no-margins-7 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 48px;
+  line-height: 130%;
+}
+
+.waves---center-heading-3 {
+  grid-row-gap: 16px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.waves---main-container-7 {
+  max-width: 1352px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.waves---section-medium-7 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.f-logo-plain {
+  min-height: 96px;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  display: flex;
+}
+
+.f-grid-four-column {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.f-h6-heading {
+  color: var(--flowui-component-library-gray-900);
+  letter-spacing: -.02em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.f-title-wrapper-center {
+  z-index: 5;
+  width: 100%;
+  max-width: 580px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+}
+
+.f-title-wrapper-center.margin-bottom-48 {
+  margin-bottom: 48px;
+}
+
+.f-container-regular {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.f-section-small {
+  padding: 64px 5%;
+  position: relative;
+}
+
+.image-4, .image-5, .image-6, .image-7 {
+  max-width: 90%;
+}
+
 @media screen and (max-width: 991px) {
   .container-3 {
     max-width: 728px;
@@ -2211,6 +2344,18 @@
   .waves---grid-halves-sticky-2 {
     grid-row-gap: 48px;
     grid-template-columns: 1fr;
+  }
+
+  .waves---grid-features-5 {
+    width: 100%;
+    max-width: 430px;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .f-grid-four-column {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -2498,11 +2643,27 @@
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
+  .waves---heading-2-no-margins-7 {
+    font-size: 44px;
+    line-height: 125%;
+  }
+
+  .waves---main-container-7 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .waves---section-medium-7 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .navbar-logo-left-container.shadow-three {
     width: auto;
+    max-width: 50%;
   }
 
   .container-3 {
@@ -2722,6 +2883,27 @@
     padding-top: 64px;
     padding-bottom: 64px;
   }
+
+  .waves---heading-3-no-margins-5 {
+    font-size: 22px;
+  }
+
+  .waves---heading-2-no-margins-7 {
+    font-size: 34px;
+  }
+
+  .waves---section-medium-7 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .f-grid-four-column {
+    grid-template-columns: 1fr;
+  }
+
+  .image-4, .image-5, .image-6, .image-7 {
+    max-width: 60%;
+  }
 }
 
 #w-node-cee91caa-41f1-1d21-63bd-06502553f5c5-ced6c1ca, #w-node-cee91caa-41f1-1d21-63bd-06502553f5d9-ced6c1ca, #w-node-_3a08bd99-c6d6-8cab-93ec-dab90129597e-ced6c1ca {
@@ -2732,7 +2914,7 @@
   grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
-#w-node-ffee80d6-0e3a-38de-0d5e-e033c634ac92-488c7ca3, #w-node-ffee80d6-0e3a-38de-0d5e-e033c634ac97-488c7ca3, #w-node-_0b0edecf-b8f9-214a-e81f-2fc3100a2108-488c7ca3 {
+#w-node-ba6eaf77-55e1-ee26-92be-19a4813557f8-488c7ca3, #w-node-ba6eaf77-55e1-ee26-92be-19a4813557ff-488c7ca3, #w-node-ba6eaf77-55e1-ee26-92be-19a481355806-488c7ca3, #w-node-c3a539bb-3ba8-6469-4b12-0421a700fe09-488c7ca3, #w-node-c3a539bb-3ba8-6469-4b12-0421a700fe0b-488c7ca3, #w-node-c3a539bb-3ba8-6469-4b12-0421a700fe0d-488c7ca3, #w-node-c3a539bb-3ba8-6469-4b12-0421a700fe0f-488c7ca3, #w-node-ffee80d6-0e3a-38de-0d5e-e033c634ac92-488c7ca3, #w-node-ffee80d6-0e3a-38de-0d5e-e033c634ac97-488c7ca3, #w-node-_0b0edecf-b8f9-214a-e81f-2fc3100a2108-488c7ca3 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
@@ -2741,7 +2923,7 @@
   align-self: start;
 }
 
-#w-node-_6d7e589d-f144-8ba7-070e-7ffe44ba20e7-5ade00fa, #w-node-_6d7e589d-f144-8ba7-070e-7ffe44ba20ec-5ade00fa, #w-node-be075da9-6bf2-89c4-0df9-3d1d51c8b84f-5ade00fa, #w-node-be075da9-6bf2-89c4-0df9-3d1d51c8b854-5ade00fa, #w-node-cb65c6e1-66e3-993d-294f-a736f7763885-5ade00fa {
+#w-node-_6d7e589d-f144-8ba7-070e-7ffe44ba20e7-5ade00fa, #w-node-_6d7e589d-f144-8ba7-070e-7ffe44ba20ec-5ade00fa, #w-node-be075da9-6bf2-89c4-0df9-3d1d51c8b854-5ade00fa, #w-node-cb65c6e1-66e3-993d-294f-a736f7763885-5ade00fa {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
